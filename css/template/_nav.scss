@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Menu defaults
+   ========================================================================== */
+
+.menu {
+    clear: both;
+    line-height: 1;
+    width: 100%;
+    display: block;
+
+    /*
+       Overall defaults
+       ========================================================================== */
+
+    li {
+        float: none;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+
+        @include notdesktop {
+            display: block;
+        }
+    }
+
+    a {
+        color: $dark;
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        outline-offset: -1px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        text-decoration: none;
+    }
+
+    /*
+       Just top-level items
+       ========================================================================== */
+
+    >li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+    @include desktop {
+        >li.highlight {
+            margin-left: 10px;
+
+            a {
+                background-color: $highlight;
+                border-radius: 3px;
+                color: white;
+
+                &:hover {
+                    color: white;
+                    background-color: lighten($highlight, 5%);
+                }
+            }
+        }
+    }
+
+    /*
+       Hover and current
+       ========================================================================== */
+
+    li:focus>a,
+    li:hover>a,
+    .current-menu-item>a {
+        color: $highlight;
+        text-decoration: none;
+    }
+
+}
+
+/* ==========================================================================
+   Submenus
+   ========================================================================== */
+
+.menu {
+    .menu-item:hover {
+        >.sub-menu {
+            display: block;
+            left: auto;
+            opacity: 1;
+        }
+    }
+
+    .sub-menu {
+        clear: both;
+        display: none;
+        left: -9999px;
+        margin: 0;
+        opacity: 1;
+        padding-left: 15px;
+        z-index: 99;
+
+        border-top: 1px solid #eee;
+
+        @include desktop {
+            opacity: 0;
+            padding-left: 0;
+            position: absolute;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        a {
+            background-color: #fff;
+            font-size: 14px;
+            position: relative;
+            word-wrap: break-word;
+            color: $default;
+            border: 1px solid #eee;
+            border-top: 0;
+
+            @include desktop {
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+        }
+
+        .current-menu-item:focus>a,
+        .current-menu-item:hover>a {
+            color: $highlight;
+            text-decoration: none;
+        }
+    }
+
+    .sub-menu,
+    .sub-menu a {
+        width: 100%;
+
+        @include desktop {
+            width: 220px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Third level
+   ========================================================================== */
+
+@include desktop {
+    .menu .sub-menu .sub-menu {
+        margin: -46px 0 0 219px;
+    }
+}
+
+/* ==========================================================================
+   Dropdown hinting
+   ========================================================================== */
+
+@include desktop {
+    .menu>.menu-item-has-children>a {
+        &:after {
+            content: "\f347";
+            font-family: 'dashicons';
+            margin-left: 4px;
+            margin-top: 3px;
+            float: right;
+            font-size: 12px;
+        }
+    }
+
+    .sub-menu>.menu-item-has-children>a {
+        &:after {
+            content: "\f345";
+            font-family: 'dashicons';
+            margin-left: 4px;
+            margin-top: 3px;
+            float: right;
+            font-size: 12px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Defaults for mobile
+   ========================================================================== */
+
+@include desktop {
+
+    .menu-toggle,
+    .sub-menu-toggle {
+        display: none;
+        visibility: hidden;
+    }
+}

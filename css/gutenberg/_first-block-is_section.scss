@@ -1,0 +1,97 @@
+//* Default for @extending
+.inner-add-margin {
+    margin-top: $headerheightdesktop;
+
+    @include tablet {
+        margin-top: $headerheighttablet;
+    }
+
+    @include mobile {
+        margin-top: $headerheightmobile;
+    }
+}
+
+body.first-block-is-section {
+
+    .site-inner {
+        margin-top: 0 !important;
+    }
+
+    .entry-content> :first-child {
+
+        //* CORE COVER
+        &.wp-block-cover {
+            >.wp-block-cover__inner-container {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* ELODIN SECTION
+        &.elodin-section {
+            >.section-content {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* GUTENBERG SECTIONS
+        &.gutenberg-section {
+            @include desktop {
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+            }
+
+            @include desktop-wide {
+                padding-top: 15vh;
+                padding-bottom: 15vh;
+            }
+
+            .content-wrap {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //*  GENESIS BLOCKS CONTAINER 
+        &.wp-block-genesis-blocks-gb-container {
+            >.gb-container-inside {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* GENESIS BLOCKS COLUMNS
+        &.wp-block-genesis-blocks-gb-columns {
+            >.gb-layout-column-wrap {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //*  ATOMIC BLOCKS CONTAINER 
+        &.wp-block-atomic-blocks-ab-container {
+            >.ab-container-inside {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* ATOMIC BLOCKS COLUMNS
+        &.wp-block-atomic-blocks-ab-columns {
+            >.ab-layout-column-wrap {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* GETWID BLOCKS SECTION
+        &.wp-block-getwid-section {
+            >.wp-block-getwid-section__wrapper {
+                >.wp-block-getwid-section__inner-wrapper {
+                    @extend .inner-add-margin;
+                }
+            }
+        }
+
+        //* ULTIMATE ADDONS SECTION
+        &.wp-block-uagb-section {
+            >.uagb-section__inner-wrap {
+                @extend .inner-add-margin;
+            }
+        }
+    }
+}

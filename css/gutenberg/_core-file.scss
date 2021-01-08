@@ -1,0 +1,23 @@
+.wp-block-file {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    a {
+        order: 1;
+        text-decoration: none;
+    }
+
+    a:not(.wp-block-file__button) {
+        color: $default;
+        pointer-events: none;
+    }
+
+    .wp-block-file__button {
+        @extend .button;
+
+        margin: 0 15px 0 0;
+        order: 0;
+    }
+}

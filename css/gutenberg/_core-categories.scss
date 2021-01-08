@@ -1,0 +1,18 @@
+.wp-block-categories,
+.wp-block-categories ol,
+.wp-block-categories ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.wp-block-categories li {
+    list-style-type: none;
+}
+
+.wp-block-categories.aligncenter {
+    text-align: center;
+}
+
+.wp-block-categories-list.alignfull {
+    padding: 0 30px;
+}

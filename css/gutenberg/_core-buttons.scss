@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+.wp-block {
+    &[data-align="center"] {
+        .wp-block-buttons {
+            .wp-block-button {
+                margin: 4px;
+            }
+        }
+    }
+
+    &[data-align="right"] {
+        .wp-block-buttons {
+            .wp-block-button {
+                margin: 4px 0 4px 4px;
+            }
+        }
+    }
+
+    &[data-align="left"] {
+        .wp-block-buttons {
+            .wp-block-button {
+                margin: 4px 4px 4px 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+.wp-block-buttons {
+    margin-bottom: 20px;
+
+    //* if this is the last child
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .wp-block-button {
+        margin: 4px 4px 4px 0;
+
+        @include mobile {
+            display: block;
+            width: 100%;
+        }
+
+        .wp-block-button__link {
+            @extend .button;
+
+            @include mobile {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            @each $name,
+            $color in $colors {
+
+                &.has-#{$name}-color {
+                    color: $color;
+                }
+
+                &.has-#{$name}-background-color {
+                    background-color: $color;
+
+                    &:hover {
+                        background-color: lighten($color, 7%);
+                        border-color: lighten($color, 7%);
+                    }
+                }
+            }
+        }
+
+        &.is-style-outline .wp-block-button__link {
+            background-color: transparent !important;
+            border-color: white !important;
+            color: white;
+
+            @each $name,
+            $color in $colors {
+
+                &.has-#{$name}-color {
+                    color: $color;
+                }
+
+                &.has-#{$name}-background-color {
+                    border-color: $color !important;
+
+                    &:hover {
+                        background-color: lighten($color, 7%) !important;
+                        border-color: lighten($color, 7%) !important;
+                    }
+                }
+
+                &:not(.has-white-background-color) {
+                    &:hover {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.wp-block-columns {
+
+    &:last-child {
+        >.wp-block-column {
+            margin-bottom: 0;
+        }
+    }
+
+    @include mobile {
+        margin-bottom: 0;
+    }
+
+    .wp-block-column {
+
+        > :last-child:not(.block-list-appender) {
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.entry-content .wp-block-columns {
+    &:last-child {
+        margin-bottom: -50px;
+
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include desktop {
+    .wp-block-column:not(:first-child) {
+        margin-left: 60px;
+    }
+}
+
+/* ==========================================================================
+   Image alignment defaults
+   ========================================================================== */
+
+.wp-block-columns {
+    .wp-block-image {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+}

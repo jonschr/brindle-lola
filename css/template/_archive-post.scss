@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+
+.archive-description {
+    background: transparent;
+    padding: 0 0 20px;
+    margin-bottom: 30px;
+
+    @include notdesktop {
+        margin-bottom: 0;
+    }
+
+
+    h1.archive-title {
+        font-size: 25px;
+        font-weight: normal;
+
+        @include tablet {
+            font-size: 22px;
+        }
+
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+}
+
+body.archive,
+body.category,
+body.blog {
+    background: $light;
+
+    @include mobile {
+        background-color: white;
+    }
+
+    article.post {
+        padding: 30px;
+        box-shadow: 0 10px 30px 0 rgba(black, 0.07);
+        border-radius: 3px;
+        background-color: white;
+        margin-bottom: 30px;
+
+        .entry-header {
+            margin-bottom: 25px;
+        }
+
+        .entry-content img.post-image,
+        .entry-content picture.entry-image>img {
+            width: calc(100% + 60px);
+            max-width: calc(100% + 60px);
+            margin-left: -30px;
+            margin-right: -30px;
+            margin-bottom: 20px;
+            height: auto !important;
+        }
+
+        &:last-child {
+            margin-bottom: 80px;
+        }
+
+        @include mobile {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 40px;
+            box-shadow: none;
+        }
+    }
+
+    .entry-content {
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h2.entry-title {
+        line-height: 1.1em;
+        margin-bottom: 5px;
+
+        a {
+            transition: .5s all ease;
+        }
+    }
+}

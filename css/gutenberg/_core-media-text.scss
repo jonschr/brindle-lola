@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Mobile padding
+   ========================================================================== */
+
+.wp-block-media-text .wp-block-media-text__content,
+.wp-block-media-text .wp-block-media-content__text {
+    @include mobile {
+        padding: 0;
+    }
+}
+
+.wp-block-media-text>figure>img {
+    @include mobile {
+        width: auto;
+    }
+}

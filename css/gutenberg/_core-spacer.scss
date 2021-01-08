@@ -1,0 +1,9 @@
+[data-type="core/spacer"] {
+    background-color: #f0f0f0;
+}
+
+.wp-block-spacer {
+    @include mobile {
+        max-height: 30px;
+    }
+}

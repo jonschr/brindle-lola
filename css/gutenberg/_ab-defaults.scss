@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Margin-bottom is zero
+   ========================================================================== */
+
+div[class*="wp-block-atomic-blocks"] {
+
+    .wp-block-buttons:last-child {
+        margin-bottom: 0;
+    }
+
+    .ab-block-layout-column-inner {
+
+        >p,
+        >ul {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Hotfix removing padding-left and padding-right on the backend
+   ========================================================================== */
+
+[data-type="atomic-blocks/ab-container"][data-align="full"] .ab-container-content>.block-editor-inner-blocks>.block-editor-block-list__layout {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ==========================================================================
+   Defaults: mobile padding and alignment
+   ========================================================================== */
+
+.entry-content>div[class*="wp-block-atomic-blocks"],
+.entry-content>.wp-block-atomic-blocks-ab-columns {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    &.ab-block-container,
+    &.wp-block-atomic-blocks-ab-columns {
+        @include tablet {
+            padding: 60px !important;
+        }
+
+        @include mobile {
+            // padding: 30px !important;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Normal blockquotes
+   ========================================================================== */
+
+.wp-block-quote {
+    border: none;
+    margin: 24px 0 36px;
+    padding: 0;
+
+    p {
+        font-size: 21px;
+        font-style: italic;
+        line-height: 1.8;
+        margin-bottom: 42px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    cite {
+        color: $default;
+        display: block;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        margin-top: 10px;
+        font-style: italic;
+        text-align: left;
+    }
+}
+
+/* ==========================================================================
+   Large blockquotes
+   ========================================================================== */
+
+.wp-block-quote {
+    &.is-style-large {
+        margin: 24px 0 30px;
+        padding: 0;
+
+        p {
+            font-size: 28px;
+        }
+
+        cite {
+            color: $default;
+            display: block;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 16px;
+            margin-top: 10px;
+            font-style: italic;
+            text-align: left;
+        }
+    }
+}

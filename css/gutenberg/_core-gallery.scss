@@ -1,0 +1,42 @@
+.wp-block-gallery {
+    margin-bottom: 15px;
+
+    ul.blocks-gallery-grid {
+        margin-left: 0;
+        padding-left: 0;
+        // padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    &:first-child {
+        ul.blocks-gallery-grid {
+            padding-top: 0;
+        }
+    }
+
+    &:last-child {
+        ul.blocks-gallery-grid {
+            // margin-bottom: -16px;
+        }
+    }
+
+    //* captions on individual images
+    .blocks-gallery-item figcaption {
+        text-align: center;
+        color: white;
+    }
+
+    //* caption on the whole gallery
+    figcaption {
+        color: #666;
+        font-size: 14px;
+        font-style: italic;
+        margin-top: -5px;
+        text-align: left;
+        display: block;
+
+        a {
+            color: white;
+        }
+    }
+}

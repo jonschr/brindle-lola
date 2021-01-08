@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+
+body:not(.full-width-content) {
+    .content-sidebar-wrap {
+        padding-top: 60px;
+
+        @include notdesktop {
+            padding-top: 30px;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Sidebars
+   ========================================================================== */
+
+.sidebar {
+    font-size: 16px;
+    line-height: 1.5;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.widget {
+    margin-bottom: 40px;
+}
+
+.widget.widget_categories {
+    ul {
+        li {
+            margin: 0;
+            padding: 0;
+
+            a {
+                color: white;
+                background-color: $dark;
+                display: block;
+                text-decoration: none;
+                padding: 8px 18px;
+            }
+        }
+
+        li:first-child {
+            a {
+                // padding-top: 10px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+        }
+
+        li:last-child {
+            a {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+                // padding-bottom: 10px;
+            }
+        }
+
+        li.current-cat a,
+        li:hover a {
+            background-color: lighten($dark, 7%);
+        }
+    }
+}
+
+.widget.featured-content {
+    .entry {
+        padding: 15px 20px;
+        box-shadow: $boxshadow;
+        background-color: white;
+
+        .entry-header {
+            margin-bottom: 0;
+        }
+
+        a.alignnone {
+            display: block;
+            margin: -15px -20px 15px;
+            max-width: calc(100% + 40px);
+            width: calc(100% + 40px);
+
+            img {
+                margin-bottom: 0;
+            }
+        }
+
+        .entry-title {
+            font-size: 20px;
+            padding: 0;
+            margin: 0 0 5px;
+        }
+    }
+}

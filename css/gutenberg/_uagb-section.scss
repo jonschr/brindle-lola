@@ -1,0 +1,11 @@
+.wp-block-uagb-section {
+
+    @include tablet {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    @include mobile {
+        padding: 30px !important;
+    }
+}

@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Table of contents block
+   ========================================================================== */
+
+.wp-block-advanced-gutenberg-blocks-summary {
+    margin-bottom: 20px;
+
+    >ul {
+        padding-top: 5px;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        >li {
+            >a {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            >ul {
+                line-height: 1em;
+                padding-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

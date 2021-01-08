@@ -1,0 +1,106 @@
+/* ==========================================================================
+   The search page
+   ========================================================================== */
+
+body.search {
+    .content-sidebar-wrap {
+        padding-top: 50px;
+    }
+
+    .search-form-custom {
+        margin-bottom: 50px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+
+    .content {
+
+        h2.search-heading {
+            font-size: 22px;
+            line-height: 1.3;
+            text-transform: none;
+            margin-bottom: 5px;
+            font-weight: normal;
+
+            a {
+                color: #1a0dab;
+                text-decoration: none !important;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+        a.google-style-link {
+            color: #202124;
+            text-decoration: none !important;
+            font-size: 14px;
+            display: block;
+            line-height: 1.1em;
+            margin-bottom: 3px;
+        }
+
+        .entry {
+            margin-bottom: 40px;
+
+            @include mobile {
+                margin-bottom: 30px;
+            }
+
+            &:last-child {
+                margin-bottom: 75px;
+
+                @include mobile {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
+
+/* ==========================================================================
+   Generic search form
+   ========================================================================== */
+
+form.search-form {
+    display: flex;
+    align-content: stretch;
+    justify-content: stretch;
+    width: 100% !important;
+
+    input.search-form-input {
+        border-right: none;
+        width: 100%;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    input.search-form-submit {
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1em;
+        text-align: center;
+        text-decoration: none;
+        height: auto;
+        background-color: $highlight;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 10px 25px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin: 0;
+        width: auto;
+    }
+}

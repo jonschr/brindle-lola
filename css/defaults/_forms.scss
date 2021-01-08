@@ -1,0 +1,88 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+select,
+textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+select {
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    min-height: 50px;
+}
+
+textarea {
+    padding: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+textarea {
+    &:focus {
+        border: 1px solid #999;
+        outline: none;
+    }
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+    width: auto;
+}
+
+::-ms-input-placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+::placeholder {
+    color: #333;
+    opacity: 1;
+}
+// body .gform_wrapper {
+
+//     input[type="text"],
+//     input[type="email"],
+//     input[type="tel"],
+//     input[type="date"],
+//     input[type="number"],
+//     input[type="password"],
+//     input[type="url"],
+//     input[type="search"],
+//     textarea {
+//         border: 1px solid #ddd !important;
+
+//         &:focus {
+//             border: 1px solid #333 !important;
+//         }
+//     }
+// }

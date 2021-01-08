@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Align full
+   ========================================================================== */
+
+.wp-block-cover.alignfull {
+    width: 100vw;
+
+    .wp-block-cover__inner-container {
+        max-width: 1200px;
+    }
+}
+
+/* ==========================================================================
+   Defaults
+   ========================================================================== */
+
+.wp-block-cover {
+    @include notdesktop {
+        min-height: auto;
+    }
+
+    .wp-block-cover__inner-container {
+        @include notdesktop {
+            width: 100%;
+            padding: 30px;
+            max-width: $defaultcontentwidth;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   .full-height
+   ========================================================================== */
+
+.wp-block-cover {
+    &.full-height {
+        @include desktop {
+            min-height: 100vh;
+        }
+    }
+}
