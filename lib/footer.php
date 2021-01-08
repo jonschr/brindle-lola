@@ -11,31 +11,31 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 // PREFOOTER //
 ///////////////
 
-//* Register the widget area
-genesis_register_sidebar( array(
-	'id'			=> 'above-footer',
-	'name'			=> __( 'Above footer', 'elodin' ),
-	'before_title' 	=> '<h2>',
-	'after_title'	=>  '</h2>'
-) );
+// //* Register the widget area
+// genesis_register_sidebar( array(
+// 	'id'			=> 'above-footer',
+// 	'name'			=> __( 'Above footer', 'elodin' ),
+// 	'before_title' 	=> '<h2>',
+// 	'after_title'	=>  '</h2>'
+// ) );
 
-//* Display the widget area
-add_action( 'genesis_before_footer', 'elodin_add_page_content', 5 );
-function elodin_add_page_content() {
+// //* Display the widget area
+// add_action( 'genesis_before_footer', 'elodin_add_page_content', 5 );
+// function elodin_add_page_content() {
 	
-	//* Bail if we're on the contact page
-	if ( is_page( 'contact' ) )
-		return;
+// 	//* Bail if we're on the contact page
+// 	if ( is_page( 'contact' ) )
+// 		return;
 	
-	//* Bail if we're on the quote page
-	if ( is_page( 'quote' ) )
-		return;
+// 	//* Bail if we're on the quote page
+// 	if ( is_page( 'quote' ) )
+// 		return;
 
-	genesis_widget_area ( 'above-footer', array(
-        'before' => '<div class="above-footer"><div class="wrap">',
-        'after' => '</div></div>',
-	) );
-}
+// 	genesis_widget_area ( 'above-footer', array(
+//         'before' => '<div class="above-footer"><div class="wrap">',
+//         'after' => '</div></div>',
+// 	) );
+// }
 
 ////////////////
 // FOOTER NAV //

@@ -2,114 +2,6 @@
    Get options
    ========================================================================== */
 /* ==========================================================================
-   Colors
-   ========================================================================== */
-/* ==========================================================================
-   Color loop
-   ========================================================================== */
-/*
-   Connect up the colors
-   ========================================================================== */
-.has-white-color,
-.has-color-white,
-.white {
-  color: #ffffff; }
-
-.has-white-background-color,
-.background-white,
-.white-background {
-  background-color: #ffffff; }
-
-.has-light-color,
-.has-color-light,
-.light {
-  color: #f5f5f5; }
-
-.has-light-background-color,
-.background-light,
-.light-background {
-  background-color: #f5f5f5; }
-
-.has-default-color,
-.has-color-default,
-.default {
-  color: #403F3E; }
-
-.has-default-background-color,
-.background-default,
-.default-background {
-  background-color: #403F3E; }
-
-.has-dark-color,
-.has-color-dark,
-.dark {
-  color: #403F3E; }
-
-.has-dark-background-color,
-.background-dark,
-.dark-background {
-  background-color: #403F3E; }
-
-.has-blue-color,
-.has-color-blue,
-.blue {
-  color: #42676F; }
-
-.has-blue-background-color,
-.background-blue,
-.blue-background {
-  background-color: #42676F; }
-
-.has-highlight-color,
-.has-color-highlight,
-.highlight {
-  color: #147bcd; }
-
-.has-highlight-background-color,
-.background-highlight,
-.highlight-background {
-  background-color: #147bcd; }
-
-/*
-   Connect up the dark ones
-   ========================================================================== */
-.has-default-background-color,
-.background-default,
-.default-background {
-  color: white; }
-  .has-default-background-color ul,
-  .background-default ul,
-  .default-background ul {
-    color: white; }
-
-.has-dark-background-color,
-.background-dark,
-.dark-background {
-  color: white; }
-  .has-dark-background-color ul,
-  .background-dark ul,
-  .dark-background ul {
-    color: white; }
-
-.has-blue-background-color,
-.background-blue,
-.blue-background {
-  color: white; }
-  .has-blue-background-color ul,
-  .background-blue ul,
-  .blue-background ul {
-    color: white; }
-
-.has-highlight-background-color,
-.background-highlight,
-.highlight-background {
-  color: white; }
-  .has-highlight-background-color ul,
-  .background-highlight ul,
-  .highlight-background ul {
-    color: white; }
-
-/* ==========================================================================
    Vars
    ========================================================================== */
 /* ==========================================================================
@@ -171,8 +63,7 @@ h6 {
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
-  clear: both;
-  font-family: "Source Sans Pro", sans-serif; }
+  clear: both; }
   @media (max-width: 960px) {
     h1 br, .editor-post-title__block .editor-post-title__input br,
     h2 br,
@@ -238,12 +129,7 @@ h2.entry-title {
 
 .entry-title a,
 .sidebar .widget-title a {
-  color: #333;
   text-decoration: none; }
-
-.entry-title a:focus,
-.entry-title a:hover {
-  color: #147bcd; }
 
 .widget-title {
   font-size: 18px;
@@ -257,16 +143,15 @@ h2.entry-title {
 .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button,
 .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button {
   color: white;
-  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  background-color: #147bcd;
+  background-color: var(--link);
   letter-spacing: 0.1em;
   font-size: 14px;
   padding: 15px 20px;
   line-height: 1em;
   position: static;
   transition: .3s all ease;
-  border: 2px solid #147bcd;
+  border: 2px solid var(--link);
   border-radius: 3px;
   text-decoration: none !important;
   display: inline-block; }
@@ -280,361 +165,20 @@ h2.entry-title {
       text-align: center;
       display: block;
       width: 100%; } }
-  .button:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover, .button:focus, .wp-block-buttons .wp-block-button .wp-block-button__link:focus, .wp-block-file .wp-block-file__button:focus, .button:active, .wp-block-buttons .wp-block-button .wp-block-button__link:active, .wp-block-file .wp-block-file__button:active,
-  .gform_wrapper .gform_footer .gform_button.button:hover,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:hover,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:hover,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:hover,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:hover,
-  .gform_wrapper .gform_footer .gform_button.button:focus,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:focus,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:focus,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:focus,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:focus,
-  .gform_wrapper .gform_footer .gform_button.button:active,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:active,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:active,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:active,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:active {
-    background-color: #1c8ee9;
-    border-color: #1c8ee9;
-    color: white; }
-  .button.has-white-color, .wp-block-buttons .wp-block-button .has-white-color.wp-block-button__link, .wp-block-file .has-white-color.wp-block-file__button, .button.has-color-white, .wp-block-buttons .wp-block-button .has-color-white.wp-block-button__link, .wp-block-file .has-color-white.wp-block-file__button, .button.white, .wp-block-buttons .wp-block-button .white.wp-block-button__link, .wp-block-file .white.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-white-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-white,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-white.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-white.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-white.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-white.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.white,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.white.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.white.wp-block-file__button {
-    color: #ffffff; }
-  .button.has-white-background-color, .wp-block-buttons .wp-block-button .has-white-background-color.wp-block-button__link, .wp-block-file .has-white-background-color.wp-block-file__button, .button.background-white, .wp-block-buttons .wp-block-button .background-white.wp-block-button__link, .wp-block-file .background-white.wp-block-file__button, .button.white-background, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link, .wp-block-file .white-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-white-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-white,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-white.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-white.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-white.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-white.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.white-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.white-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.white-background.wp-block-file__button {
-    background-color: #ffffff;
-    border-color: #ffffff; }
-    .button.has-white-background-color:hover, .wp-block-buttons .wp-block-button .has-white-background-color.wp-block-button__link:hover, .wp-block-file .has-white-background-color.wp-block-file__button:hover, .button.background-white:hover, .wp-block-buttons .wp-block-button .background-white.wp-block-button__link:hover, .wp-block-file .background-white.wp-block-file__button:hover, .button.white-background:hover, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link:hover, .wp-block-file .white-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-white-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-white-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-white-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-white-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-white:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-white.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-white.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-white.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-white.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.white-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.white-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.white-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.white-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.white-background.wp-block-file__button:hover {
-      background-color: white;
-      border-color: white; }
-  .button.has-light-color, .wp-block-buttons .wp-block-button .has-light-color.wp-block-button__link, .wp-block-file .has-light-color.wp-block-file__button, .button.has-color-light, .wp-block-buttons .wp-block-button .has-color-light.wp-block-button__link, .wp-block-file .has-color-light.wp-block-file__button, .button.light, .wp-block-buttons .wp-block-button .light.wp-block-button__link, .wp-block-file .light.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-light-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-light,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-light.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-light.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-light.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-light.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.light,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.light.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.light.wp-block-file__button {
-    color: #f5f5f5; }
-  .button.has-light-background-color, .wp-block-buttons .wp-block-button .has-light-background-color.wp-block-button__link, .wp-block-file .has-light-background-color.wp-block-file__button, .button.background-light, .wp-block-buttons .wp-block-button .background-light.wp-block-button__link, .wp-block-file .background-light.wp-block-file__button, .button.light-background, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link, .wp-block-file .light-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-light-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-light,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-light.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-light.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-light.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-light.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.light-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.light-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.light-background.wp-block-file__button {
-    background-color: #f5f5f5;
-    border-color: #f5f5f5; }
-    .button.has-light-background-color:hover, .wp-block-buttons .wp-block-button .has-light-background-color.wp-block-button__link:hover, .wp-block-file .has-light-background-color.wp-block-file__button:hover, .button.background-light:hover, .wp-block-buttons .wp-block-button .background-light.wp-block-button__link:hover, .wp-block-file .background-light.wp-block-file__button:hover, .button.light-background:hover, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link:hover, .wp-block-file .light-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-light-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-light-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-light-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-light-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-light:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-light.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-light.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-light.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-light.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.light-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.light-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.light-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.light-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.light-background.wp-block-file__button:hover {
-      background-color: white;
-      border-color: white; }
-  .button.has-default-color, .wp-block-buttons .wp-block-button .has-default-color.wp-block-button__link, .wp-block-file .has-default-color.wp-block-file__button, .button.has-color-default, .wp-block-buttons .wp-block-button .has-color-default.wp-block-button__link, .wp-block-file .has-color-default.wp-block-file__button, .button.default, .wp-block-buttons .wp-block-button .default.wp-block-button__link, .wp-block-file .default.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-default-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-default,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-default.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-default.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-default.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-default.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.default,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.default.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.default.wp-block-file__button {
-    color: #403F3E; }
-  .button.has-default-background-color, .wp-block-buttons .wp-block-button .has-default-background-color.wp-block-button__link, .wp-block-file .has-default-background-color.wp-block-file__button, .button.background-default, .wp-block-buttons .wp-block-button .background-default.wp-block-button__link, .wp-block-file .background-default.wp-block-file__button, .button.default-background, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link, .wp-block-file .default-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-default-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-default,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-default.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-default.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-default.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-default.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.default-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.default-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.default-background.wp-block-file__button {
-    background-color: #403F3E;
-    border-color: #403F3E; }
-    .button.has-default-background-color:hover, .wp-block-buttons .wp-block-button .has-default-background-color.wp-block-button__link:hover, .wp-block-file .has-default-background-color.wp-block-file__button:hover, .button.background-default:hover, .wp-block-buttons .wp-block-button .background-default.wp-block-button__link:hover, .wp-block-file .background-default.wp-block-file__button:hover, .button.default-background:hover, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link:hover, .wp-block-file .default-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-default-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-default-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-default-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-default-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-default:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-default.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-default.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-default.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-default.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.default-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.default-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.default-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.default-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.default-background.wp-block-file__button:hover {
-      background-color: #525150;
-      border-color: #525150; }
-  .button.has-dark-color, .wp-block-buttons .wp-block-button .has-dark-color.wp-block-button__link, .wp-block-file .has-dark-color.wp-block-file__button, .button.has-color-dark, .wp-block-buttons .wp-block-button .has-color-dark.wp-block-button__link, .wp-block-file .has-color-dark.wp-block-file__button, .button.dark, .wp-block-buttons .wp-block-button .dark.wp-block-button__link, .wp-block-file .dark.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-dark-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-dark,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-dark.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-dark.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-dark.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-dark.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.dark,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.dark.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.dark.wp-block-file__button {
-    color: #403F3E; }
-  .button.has-dark-background-color, .wp-block-buttons .wp-block-button .has-dark-background-color.wp-block-button__link, .wp-block-file .has-dark-background-color.wp-block-file__button, .button.background-dark, .wp-block-buttons .wp-block-button .background-dark.wp-block-button__link, .wp-block-file .background-dark.wp-block-file__button, .button.dark-background, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link, .wp-block-file .dark-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-dark-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-dark,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-dark.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-dark.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.dark-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.dark-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-file__button {
-    background-color: #403F3E;
-    border-color: #403F3E; }
-    .button.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .has-dark-background-color.wp-block-button__link:hover, .wp-block-file .has-dark-background-color.wp-block-file__button:hover, .button.background-dark:hover, .wp-block-buttons .wp-block-button .background-dark.wp-block-button__link:hover, .wp-block-file .background-dark.wp-block-file__button:hover, .button.dark-background:hover, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link:hover, .wp-block-file .dark-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-dark-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-dark-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-dark-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-dark-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-dark:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-dark.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-dark.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-dark.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.dark-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.dark-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.dark-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.dark-background.wp-block-file__button:hover {
-      background-color: #525150;
-      border-color: #525150; }
-  .button.has-blue-color, .wp-block-buttons .wp-block-button .has-blue-color.wp-block-button__link, .wp-block-file .has-blue-color.wp-block-file__button, .button.has-color-blue, .wp-block-buttons .wp-block-button .has-color-blue.wp-block-button__link, .wp-block-file .has-color-blue.wp-block-file__button, .button.blue, .wp-block-buttons .wp-block-button .blue.wp-block-button__link, .wp-block-file .blue.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-blue-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-blue,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-blue.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-blue.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-blue.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-blue.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.blue,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.blue.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.blue.wp-block-file__button {
-    color: #42676F; }
-  .button.has-blue-background-color, .wp-block-buttons .wp-block-button .has-blue-background-color.wp-block-button__link, .wp-block-file .has-blue-background-color.wp-block-file__button, .button.background-blue, .wp-block-buttons .wp-block-button .background-blue.wp-block-button__link, .wp-block-file .background-blue.wp-block-file__button, .button.blue-background, .wp-block-buttons .wp-block-button .blue-background.wp-block-button__link, .wp-block-file .blue-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-blue-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-blue,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-blue.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-blue.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.blue-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.blue-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-file__button {
-    background-color: #42676F;
-    border-color: #42676F; }
-    .button.has-blue-background-color:hover, .wp-block-buttons .wp-block-button .has-blue-background-color.wp-block-button__link:hover, .wp-block-file .has-blue-background-color.wp-block-file__button:hover, .button.background-blue:hover, .wp-block-buttons .wp-block-button .background-blue.wp-block-button__link:hover, .wp-block-file .background-blue.wp-block-file__button:hover, .button.blue-background:hover, .wp-block-buttons .wp-block-button .blue-background.wp-block-button__link:hover, .wp-block-file .blue-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-blue-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-blue-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-blue-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-blue-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-blue:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-blue.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-blue.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-blue.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.blue-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.blue-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.blue-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.blue-background.wp-block-file__button:hover {
-      background-color: #4f7c85;
-      border-color: #4f7c85; }
-  .button.has-highlight-color, .wp-block-buttons .wp-block-button .has-highlight-color.wp-block-button__link, .wp-block-file .has-highlight-color.wp-block-file__button, .button.has-color-highlight, .wp-block-buttons .wp-block-button .has-color-highlight.wp-block-button__link, .wp-block-file .has-color-highlight.wp-block-file__button, .button.highlight, .wp-block-buttons .wp-block-button .highlight.wp-block-button__link, .wp-block-file .highlight.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-highlight-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-color-highlight,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-color-highlight.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-color-highlight.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-color-highlight.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-color-highlight.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.highlight,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight.wp-block-file__button {
-    color: #147bcd; }
-  .button.has-highlight-background-color, .wp-block-buttons .wp-block-button .has-highlight-background-color.wp-block-button__link, .wp-block-file .has-highlight-background-color.wp-block-file__button, .button.background-highlight, .wp-block-buttons .wp-block-button .background-highlight.wp-block-button__link, .wp-block-file .background-highlight.wp-block-file__button, .button.highlight-background, .wp-block-buttons .wp-block-button .highlight-background.wp-block-button__link, .wp-block-file .highlight-background.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.has-highlight-background-color,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-background-color.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-background-color.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.background-highlight,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-highlight.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.background-highlight.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-file__button,
-  .gform_wrapper .gform_footer .gform_button.button.highlight-background,
-  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight-background.wp-block-button__link,
-  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-button__link,
-  .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight-background.wp-block-file__button,
-  .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-file__button {
-    background-color: #147bcd;
-    border-color: #147bcd; }
-    .button.has-highlight-background-color:hover, .wp-block-buttons .wp-block-button .has-highlight-background-color.wp-block-button__link:hover, .wp-block-file .has-highlight-background-color.wp-block-file__button:hover, .button.background-highlight:hover, .wp-block-buttons .wp-block-button .background-highlight.wp-block-button__link:hover, .wp-block-file .background-highlight.wp-block-file__button:hover, .button.highlight-background:hover, .wp-block-buttons .wp-block-button .highlight-background.wp-block-button__link:hover, .wp-block-file .highlight-background.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.has-highlight-background-color:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.has-highlight-background-color.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.has-highlight-background-color.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.has-highlight-background-color.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.background-highlight:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.background-highlight.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.background-highlight.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.background-highlight.wp-block-file__button:hover,
-    .gform_wrapper .gform_footer .gform_button.button.highlight-background:hover,
-    .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.highlight-background.wp-block-button__link:hover,
-    .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-button__link:hover,
-    .gform_wrapper .gform_footer .wp-block-file .gform_button.highlight-background.wp-block-file__button:hover,
-    .wp-block-file .gform_wrapper .gform_footer .gform_button.highlight-background.wp-block-file__button:hover {
-      background-color: #1c8ee9;
-      border-color: #1c8ee9; }
 
 /* ==========================================================================
    Font
    ========================================================================== */
-p,
-ul {
-  font-family: "Source Sans Pro", sans-serif; }
-  @media (max-width: 600px) {
-    p br,
-    ul br {
-      display: none; } }
+@media (max-width: 600px) {
+  p br,
+  ul br {
+    display: none; } }
 
 /* ==========================================================================
    General typeography
    ========================================================================== */
 li {
-  font-size: 18px;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-size: 18px; }
   @media (max-width: 600px) {
     li {
       font-size: 16px; } }
@@ -718,13 +262,13 @@ p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
    Links
    ========================================================================== */
 a {
-  color: #147bcd;
+  color: var(--link);
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
 
 a:focus,
 a:hover {
-  color: #1689e4; }
+  color: var(--link); }
 
 p.has-text-color a,
 p.has-background a {
@@ -744,7 +288,8 @@ p.has-background.light-text a {
 /* ==========================================================================
    Background colors
    ========================================================================== */
-.has-background:not(.block-editor-rich-text__editable) {
+.has-background:not(.block-editor-rich-text__editable),
+p.has-background {
   padding: 25px 30px;
   margin-bottom: 20px; }
 
@@ -753,46 +298,6 @@ p.has-background.light-text a {
 
 .has-background.box-shadow {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
-
-/* ==========================================================================
-   Normal blockquotes
-   ========================================================================== */
-.wp-block-quote {
-  border: none;
-  margin: 24px 0 36px;
-  padding: 0; }
-  .wp-block-quote p {
-    font-size: 21px;
-    font-style: italic;
-    line-height: 1.8;
-    margin-bottom: 42px; }
-    .wp-block-quote p:last-of-type {
-      margin-bottom: 0; }
-  .wp-block-quote cite {
-    color: #403F3E;
-    display: block;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-    font-style: italic;
-    text-align: left; }
-
-/* ==========================================================================
-   Large blockquotes
-   ========================================================================== */
-.wp-block-quote.is-style-large {
-  margin: 24px 0 30px;
-  padding: 0; }
-  .wp-block-quote.is-style-large p {
-    font-size: 28px; }
-  .wp-block-quote.is-style-large cite {
-    color: #403F3E;
-    display: block;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-    font-style: italic;
-    text-align: left; }
 
 /* ==========================================================================
    Alignment
@@ -824,106 +329,6 @@ p.has-background.light-text a {
         text-align: center;
         display: block;
         width: 100%; } }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color {
-      color: #ffffff; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color {
-      background-color: #ffffff; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover {
-        background-color: white;
-        border-color: white; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color {
-      color: #f5f5f5; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color {
-      background-color: #f5f5f5; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover {
-        background-color: white;
-        border-color: white; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color {
-      color: #403F3E; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color {
-      background-color: #403F3E; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover {
-        background-color: #525150;
-        border-color: #525150; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color {
-      color: #403F3E; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color {
-      background-color: #403F3E; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover {
-        background-color: #525150;
-        border-color: #525150; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-color {
-      color: #42676F; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color {
-      background-color: #42676F; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color:hover {
-        background-color: #4f7c85;
-        border-color: #4f7c85; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-color {
-      color: #147bcd; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color {
-      background-color: #147bcd; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color:hover {
-        background-color: #1c8ee9;
-        border-color: #1c8ee9; }
-    .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
-      background-color: transparent !important;
-      border-color: white !important;
-      color: white; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-color {
-        color: #ffffff; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color {
-        border-color: #ffffff !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color:hover {
-          background-color: white !important;
-          border-color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-color {
-        color: #f5f5f5; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color {
-        border-color: #f5f5f5 !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color:hover {
-          background-color: white !important;
-          border-color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-color {
-        color: #403F3E; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color {
-        border-color: #403F3E !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color:hover {
-          background-color: #525150 !important;
-          border-color: #525150 !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-color {
-        color: #403F3E; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color {
-        border-color: #403F3E !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color:hover {
-          background-color: #525150 !important;
-          border-color: #525150 !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-color {
-        color: #42676F; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color {
-        border-color: #42676F !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color:hover {
-          background-color: #4f7c85 !important;
-          border-color: #4f7c85 !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-color {
-        color: #147bcd; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color {
-        border-color: #147bcd !important; }
-        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color:hover {
-          background-color: #1c8ee9 !important;
-          border-color: #1c8ee9 !important; }
-      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
-        color: white !important; }
 
 .wp-block-categories,
 .wp-block-categories ol,
@@ -939,9 +344,6 @@ p.has-background.light-text a {
 
 .wp-block-categories-list.alignfull {
   padding: 0 30px; }
-
-.wp-block-columns:last-child > .wp-block-column {
-  margin-bottom: 0; }
 
 @media (max-width: 600px) {
   .wp-block-columns {
@@ -1014,7 +416,7 @@ p.has-background.light-text a {
     order: 1;
     text-decoration: none; }
   .wp-block-file a:not(.wp-block-file__button) {
-    color: #403F3E;
+    color: var(--link);
     pointer-events: none; }
   .wp-block-file .wp-block-file__button {
     margin: 0 15px 0 0;
@@ -1104,6 +506,14 @@ figure.wp-block-image {
       .entry-content > .wp-block-image figure.alignright img {
         width: 100%; } }
 
+/* ==========================================================================
+   Rounded
+   ========================================================================== */
+.is-style-circle-mask img,
+.is-style-rounded img {
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.12); }
+
 .wp-block-latest-posts {
   clear: both;
   margin-left: 0; }
@@ -1155,44 +565,8 @@ figure.wp-block-image {
   .wp-block-spacer {
     max-height: 30px; } }
 
-.wp-block-table {
-  margin-bottom: 25px; }
-  .wp-block-table table {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
-    border: none;
-    margin-bottom: 10px;
-    table-layout: fixed;
-    width: 100%; }
-    .wp-block-table table td,
-    .wp-block-table table th {
-      padding: 8px 15px;
-      border: none;
-      border-top: 1px solid rgba(64, 63, 62, 0.2);
-      border-bottom: 1px solid rgba(64, 63, 62, 0.2);
-      color: #403F3E;
-      line-height: 1em;
-      font-size: 18px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      max-width: 1px; }
-      @media (min-width: 600px) and (max-width: 960px) {
-        .wp-block-table table td,
-        .wp-block-table table th {
-          font-size: 15px;
-          padding: 5px; } }
-      @media (max-width: 600px) {
-        .wp-block-table table td,
-        .wp-block-table table th {
-          font-size: 15px;
-          padding: 5px; } }
-    .wp-block-table table th {
-      background-color: black;
-      color: white;
-      font-weight: bold; }
-
 .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
-  margin-top: 110px; }
+  margin-top: 90px; }
   @media (min-width: 600px) and (max-width: 960px) {
     .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
       margin-top: 70px; } }

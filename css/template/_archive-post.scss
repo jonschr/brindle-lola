@@ -30,7 +30,7 @@
 body.archive,
 body.category,
 body.blog {
-    background: $light;
+    background: var(--light);
 
     @include mobile {
         background-color: white;

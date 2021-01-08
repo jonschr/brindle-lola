@@ -12,7 +12,6 @@ h6 {
     line-height: 1.2;
     margin: 0 0 20px;
     clear: both;
-    font-family: "Source Sans Pro", sans-serif;
 
     br {
         @include notdesktop {
@@ -105,14 +104,11 @@ h2.entry-title {
 
 .entry-title a,
 .sidebar .widget-title a {
-    color: #333;
     text-decoration: none;
 }
 
 .entry-title a:focus,
-.entry-title a:hover {
-    color: $highlight;
-}
+.entry-title a:hover {}
 
 .widget-title {
     font-size: 18px;

@@ -42,7 +42,7 @@ body:not(.full-width-content) {
 
             a {
                 color: white;
-                background-color: $dark;
+                background-color: var(--primary);
                 display: block;
                 text-decoration: none;
                 padding: 8px 18px;
@@ -67,7 +67,7 @@ body:not(.full-width-content) {
 
         li.current-cat a,
         li:hover a {
-            background-color: lighten($dark, 7%);
+            background-color: var(--primary)
         }
     }
 }

@@ -1,93 +1,9 @@
 /* ==========================================================================
-   Preheader
-   ========================================================================== */
-
-.preheader {
-    background-color: $dark;
-    padding: 0 20px;
-
-    @include tablet {
-        display: none;
-    }
-
-    @include mobile {
-        display: none;
-    }
-
-    >.wrap {
-        display: flex;
-        align-items: center;
-        max-width: $defaultcontentwidth;
-        margin: 0 auto;
-
-        @media(max-width: $defaultcontentwidth) {
-            padding: 0 20px;
-        }
-
-    }
-
-    .widget {
-        margin: 0 20px;
-        color: rgba(white, 0.7);
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:last-child {
-            margin-left: auto;
-            margin-right: 0;
-        }
-
-        p {
-            margin-bottom: 0;
-            font-size: 15px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .widget-title {
-            margin-bottom: 0;
-        }
-    }
-
-    .widget.simple-social-icons {
-        ul {
-            li {
-                margin: 4px 2px 0 !important;
-
-                a {
-                    padding: 3px !important;
-                    display: inline-block !important;
-                    font-size: 18px !important;
-                    border-radius: 0 !important;
-                    line-height: 1em !important;
-                    margin: 0 !important;
-                }
-            }
-        }
-    }
-
-
-    .widget_text {
-        padding: 5px 0;
-    }
-
-    ul.menu {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-/* ==========================================================================
    Wrappers
    ========================================================================== */
 
 .site-header {
-    background-color: rgba(white, 0.95);
+    background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     padding: 0;
     transition: .3s all ease;
@@ -102,9 +18,10 @@
     >.wrap {
         max-width: $defaultcontentwidth;
         margin: 0 auto;
+        // padding: 0 0 0 20px;
 
-        @media(max-width: $defaultcontentwidth) {
-            padding: 0 20px;
+        @include mobile {
+            padding: 0 0 0 10px;
         }
 
         @include desktop {
@@ -113,11 +30,9 @@
             align-items: center;
         }
 
-
         @include notdesktop {
             display: block;
         }
-
 
         .title-area,
         .nav-primary,
@@ -152,8 +67,6 @@
 
             @include notdesktop {
                 clear: left;
-                padding-bottom: 15px;
-                padding-top: 15px;
                 width: 100%;
             }
         }
@@ -172,8 +85,8 @@
 
 .site-header {
     .title-area {
-        padding-bottom: 25px;
-        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         transition: .3s all ease;
 
         img.custom-logo {
@@ -192,9 +105,6 @@
 }
 
 .wp-custom-logo .title-area {
-    // max-width: 350px;
-    padding-bottom: 20px;
-    padding-top: 20px;
     width: 100%;
 
     @include notdesktop {
@@ -242,8 +152,6 @@
 
 .nav-primary {
     clear: left;
-    padding-bottom: 15px;
-    padding-top: 15px;
     width: 100%;
 }
 
@@ -258,11 +166,29 @@
     .preheader {
         display: none;
     }
+}
 
-    .title-area {
-        @include desktop {
-            padding-top: 10px;
-            padding-bottom: 10px;
+/* ==========================================================================
+   Lease now button
+   ========================================================================== */
+
+@media(min-width: 1530px) {
+    .menu-primary {
+        li:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media(min-width: 960px) and (max-width: 1530px) {
+    .site-header {
+        padding-left: 20px;
+
+        >.wrap {
+            max-width: 100%;
+            padding: 0 !important;
         }
     }
 }

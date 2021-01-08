@@ -10,7 +10,7 @@
     }
 
     a:not(.wp-block-file__button) {
-        color: $default;
+        color: var(--link);
         pointer-events: none;
     }
 

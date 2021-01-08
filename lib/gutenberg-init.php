@@ -105,12 +105,6 @@ add_theme_support(
 	genesis_get_config( 'editor-font-sizes' )
 );
 
-// Adds support for editor color palette.
-add_theme_support(
-	'editor-color-palette',
-	genesis_get_config( 'editor-color-palette' )
-);
-
 add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
 /**
  * Set content width to match the “wide” Gutenberg block width.

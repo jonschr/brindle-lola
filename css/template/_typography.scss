@@ -3,7 +3,6 @@
    ========================================================================== */
 p,
 ul {
-    font-family: "Source Sans Pro", sans-serif;
 
     br {
         @include mobile {
@@ -12,15 +11,12 @@ ul {
     }
 }
 
-
 /* ==========================================================================
    General typeography
    ========================================================================== */
 
-
 li {
     font-size: 18px;
-    font-family: "Source Sans Pro", sans-serif;
 
     @include mobile {
         font-size: 16px;
@@ -128,14 +124,14 @@ p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
    ========================================================================== */
 
 a {
-    color: $highlight;
+    color: var(--link);
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-    color: lighten($highlight, 5%);
+    color: var(--link)
 }
 
 p.has-text-color a,
@@ -160,7 +156,8 @@ p.has-background.light-text a {
    Background colors
    ========================================================================== */
 
-.has-background:not(.block-editor-rich-text__editable) {
+.has-background:not(.block-editor-rich-text__editable),
+p.has-background {
     padding: 25px 30px;
     margin-bottom: 20px;
 }

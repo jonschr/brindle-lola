@@ -2,7 +2,7 @@
    Menu defaults
    ========================================================================== */
 
-.menu {
+.menu-primary {
     clear: both;
     line-height: 1;
     width: 100%;
@@ -24,7 +24,7 @@
     }
 
     a {
-        color: $dark;
+        color: var(--default);
         display: block;
         font-size: 16px;
         font-weight: 400;
@@ -49,20 +49,23 @@
             display: block;
             font-size: 16px;
         }
-    }
 
-    @include desktop {
-        >li.highlight {
-            margin-left: 10px;
+        @include desktop {
+            &:last-child {
 
-            a {
-                background-color: $highlight;
-                border-radius: 3px;
-                color: white;
-
-                &:hover {
+                >a {
+                    background-color: var(--secondary);
                     color: white;
-                    background-color: lighten($highlight, 5%);
+                    padding-top: 40px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-left: 15px;
+                    height: calc(#{$headerheightdesktop} + 1px);
+
+                    &:hover {
+                        background-color: var(--primary);
+                        color: white;
+                    }
                 }
             }
         }
@@ -75,7 +78,7 @@
     li:focus>a,
     li:hover>a,
     .current-menu-item>a {
-        color: $highlight;
+        color: var(--link);
         text-decoration: none;
     }
 
@@ -117,7 +120,7 @@
             font-size: 14px;
             position: relative;
             word-wrap: break-word;
-            color: $default;
+            color: var(--default);
             border: 1px solid #eee;
             border-top: 0;
 
@@ -129,7 +132,7 @@
 
         .current-menu-item:focus>a,
         .current-menu-item:hover>a {
-            color: $highlight;
+            color: var(--link);
             text-decoration: none;
         }
     }

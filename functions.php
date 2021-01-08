@@ -48,10 +48,10 @@ require_once get_stylesheet_directory() . '/lib/gutenberg-last-block-logic.php';
 require_once get_stylesheet_directory() . '/lib/footer.php';
 
 // Enqueues
-require_once  get_stylesheet_directory() . '/lib/enqueue.php';
+require_once get_stylesheet_directory() . '/lib/enqueue.php';
 
 // Sidebar customizations (unregistering layouts, etc.)
-require_once  get_stylesheet_directory() . '/lib/sidebar.php';
+require_once get_stylesheet_directory() . '/lib/sidebar.php';
 
 // Text sizes
 require_once get_stylesheet_directory() . '/lib/text-sizes.php';
@@ -89,15 +89,3 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
 
-//* Add the color variables on both the frontend and the backend
-// add_action( 'init', 'output_root_colors' );
-function output_root_colors() {
-	?>
-	<style>
-		:root {
-			--pink: pink;
-			--green: green;
-		}
-	</style>
-	<?php
-}

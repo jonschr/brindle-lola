@@ -11,9 +11,10 @@
 .genesis-responsive-menu {
     @include notdesktop {
         display: none;
+        margin-bottom: 10px;
     }
 
-    position: relative;
+    // position: relative;
 }
 
 .genesis-responsive-menu .genesis-nav-menu .menu-item:hover>.sub-menu {
@@ -24,7 +25,7 @@
 .sub-menu-toggle {
     background-color: transparent;
     border-width: 0;
-    color: #333;
+    color: var(--default);
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -38,7 +39,7 @@
 .sub-menu-toggle:hover {
     background-color: transparent;
     border-width: 0;
-    color: $highlight;
+    color: var(--link);
 }
 
 .menu-toggle {

@@ -56,52 +56,6 @@
                 display: block;
                 width: 100%;
             }
-
-            @each $name,
-            $color in $colors {
-
-                &.has-#{$name}-color {
-                    color: $color;
-                }
-
-                &.has-#{$name}-background-color {
-                    background-color: $color;
-
-                    &:hover {
-                        background-color: lighten($color, 7%);
-                        border-color: lighten($color, 7%);
-                    }
-                }
-            }
-        }
-
-        &.is-style-outline .wp-block-button__link {
-            background-color: transparent !important;
-            border-color: white !important;
-            color: white;
-
-            @each $name,
-            $color in $colors {
-
-                &.has-#{$name}-color {
-                    color: $color;
-                }
-
-                &.has-#{$name}-background-color {
-                    border-color: $color !important;
-
-                    &:hover {
-                        background-color: lighten($color, 7%) !important;
-                        border-color: lighten($color, 7%) !important;
-                    }
-                }
-
-                &:not(.has-white-background-color) {
-                    &:hover {
-                        color: white !important;
-                    }
-                }
-            }
         }
     }
 }

@@ -8,11 +8,11 @@
  * Header customization
  */
 //* Register the widget area
-genesis_register_sidebar( array(
-	'id'		=> 'preheader',
-	'name'		=> __( 'Preheader', 'elodin-twentynineteen' ),
-	'description'	=> __( 'Displays before anything else.', 'elodin-twentynineteen' ),
-) );
+// genesis_register_sidebar( array(
+// 	'id'		=> 'preheader',
+// 	'name'		=> __( 'Preheader', 'elodin-twentynineteen' ),
+// 	'description'	=> __( 'Displays before anything else.', 'elodin-twentynineteen' ),
+// ) );
 
 //* Add the widget area before the opening wrap
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
@@ -28,12 +28,12 @@ function elodin_header_markup_open() {
 		'context' => 'site-header',
 	) );
 
-	if ( is_active_sidebar( 'preheader' ) ) {
-		genesis_widget_area ('preheader', array(
-			'before' => '<div class="preheader"><div class="wrap">',
-			'after' => '</div></div>',
-		) );
-	}
+	// if ( is_active_sidebar( 'preheader' ) ) {
+	// 	genesis_widget_area ('preheader', array(
+	// 		'before' => '<div class="preheader"><div class="wrap">',
+	// 		'after' => '</div></div>',
+	// 	) );
+	// }
 
 	genesis_structural_wrap( 'header' );
 

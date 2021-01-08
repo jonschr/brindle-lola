@@ -1,11 +1,4 @@
 .wp-block-columns {
-
-    &:last-child {
-        >.wp-block-column {
-            margin-bottom: 0;
-        }
-    }
-
     @include mobile {
         margin-bottom: 0;
     }
