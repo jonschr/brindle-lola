@@ -92,3 +92,15 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
 
+
+// Updater
+require 'vendor/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/jonschr/brindle-urban/',
+	__FILE__,
+	'brindle-urban'
+);
+
+// Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
