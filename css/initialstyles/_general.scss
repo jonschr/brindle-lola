@@ -37,14 +37,11 @@ body.logged-in {
     }
 }
 
-
-
 body.logged-out {
     .show-logged-in {
         display: none;
     }
 }
-
 
 /* ==========================================================================
    Alignment
@@ -146,7 +143,6 @@ body.logged-out {
         display: none !important;
     }
 }
-
 
 /* ==========================================================================
    Containers

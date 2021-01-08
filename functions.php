@@ -4,9 +4,9 @@
 require_once get_template_directory() . '/lib/init.php';
 
 // Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
-define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.7.10' );
+define( 'CHILD_THEME_NAME', 'Urban' );
+define( 'CHILD_THEME_URL', 'https://www.brindledigital.com' );
+define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -94,3 +94,16 @@ add_filter ( 'genesis_edit_post_link' , '__return_false' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
+//* Add the color variables on both the frontend and the backend
+// add_action( 'init', 'output_root_colors' );
+function output_root_colors() {
+	?>
+	<style>
+		:root {
+			--pink: pink;
+			--green: green;
+		}
+	</style>
+	<?php
+}
