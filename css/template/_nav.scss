@@ -61,6 +61,7 @@
                     padding-right: 30px;
                     margin-left: 15px;
                     height: calc(#{$headerheightdesktop} + 1px);
+                    line-height: 1em;
 
                     &:hover {
                         background-color: var(--primary);

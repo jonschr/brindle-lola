@@ -60,10 +60,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin: 0 0 20px;
-  clear: both; }
+  clear: both;
+  color: var(--primary); }
   @media (max-width: 960px) {
     h1 br, .editor-post-title__block .editor-post-title__input br,
     h2 br,
@@ -80,7 +80,7 @@ h1, .editor-post-title__block .editor-post-title__input {
       font-size: 50px; } }
   @media (max-width: 600px) {
     h1, .editor-post-title__block .editor-post-title__input {
-      font-size: 35px; } }
+      font-size: 40px; } }
 
 h2 {
   font-size: 35px; }
@@ -144,7 +144,6 @@ h2.entry-title {
   color: white;
   text-transform: uppercase;
   background-color: var(--link);
-  letter-spacing: 0.1em;
   font-size: 14px;
   padding: 15px 20px;
   line-height: 1em;
@@ -154,6 +153,14 @@ h2.entry-title {
   border-radius: 3px;
   text-decoration: none !important;
   display: inline-block; }
+  .button:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover,
+  .gform_wrapper .gform_footer .gform_button.button:hover,
+  .gform_wrapper .gform_footer .wp-block-buttons .wp-block-button .gform_button.wp-block-button__link:hover,
+  .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:hover,
+  .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:hover,
+  .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:hover {
+    background-color: var(--primary);
+    border-color: var(--primary); }
   @media (max-width: 600px) {
     .button, .wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-file .wp-block-file__button,
     .gform_wrapper .gform_footer .gform_button.button,
@@ -221,7 +228,7 @@ p {
   margin: 0 0 20px;
   padding: 0;
   font-size: 18px;
-  line-height: 1.6em; }
+  line-height: 1.3em; }
   @media (max-width: 600px) {
     p {
       font-size: 16px; } }
