@@ -1,0 +1,34 @@
+.attractions-items {
+    .attractions {
+        width: 280px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        p.address {
+            font-size: 14px;
+            line-height: 1.3em;
+        }
+
+        .featured-image {
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+    }
+}
+
+ul.attractions-filters {
+    text-align: center;
+
+    a {
+        color: white;
+        background-color: var(--primary);
+        text-decoration: none;
+
+        &:hover,
+        &.active {
+            background-color: var(--secondary);
+        }
+    }
+}
