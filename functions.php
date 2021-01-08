@@ -47,9 +47,6 @@ require_once get_stylesheet_directory() . '/lib/gutenberg-last-block-logic.php';
 // Footer customizations
 require_once get_stylesheet_directory() . '/lib/footer.php';
 
-// Theme colors
-require_once  get_stylesheet_directory() . '/lib/theme-colors.php';
-
 // Enqueues
 require_once  get_stylesheet_directory() . '/lib/enqueue.php';
 
