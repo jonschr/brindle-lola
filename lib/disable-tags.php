@@ -1,7 +1,7 @@
 <?php
 
 // Remove tags support from posts
-function elodin_twentynineteen_remove_tags() {
+function urban_remove_tags() {
     unregister_taxonomy_for_object_type('post_tag', 'post');
 }
-add_action('init', 'elodin_twentynineteen_remove_tags');
+add_action('init', 'urban_remove_tags');
