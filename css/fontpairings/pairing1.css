@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat';
+    font-weight: 700 !important;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+p,
+li {
+    font-family: 'Work Sans';
+}
+
+.genesis-nav-menu>li>a {
+    font-weight: bold;
+    font-family: 'Montserrat';
+}

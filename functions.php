@@ -17,10 +17,13 @@ function genesis_sample_localization_setup() {
 	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
 }
 
-// Adds image upload and color select to Customizer.
+// Includes font stuff
+require_once get_stylesheet_directory() . '/lib/customize-fonts.php';
+
+// Includes color stuff
 require_once get_stylesheet_directory() . '/lib/customize-colors.php';
 
-// Includes Customizer CSS.
+// Includes logo stuff.
 require_once get_stylesheet_directory() . '/lib/customize-logo-output.php';
 
 // Adds WooCommerce support.
