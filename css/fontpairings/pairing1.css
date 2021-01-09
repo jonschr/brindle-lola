@@ -17,6 +17,7 @@ li {
     font-family: 'Work Sans';
     font-size: 18px;
     line-height: 1.5em;
+    letter-spacing: -0.05em;
 }
 
 .button,

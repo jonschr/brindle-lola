@@ -53,7 +53,7 @@ function urban_register_fonts_gutenberg() {
     
     if ( $urban_font_selection == 'pairing1' ) {
         add_editor_style( '//fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,300;1,400' );
-        add_editor_style( '//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,400;1,800' );
+        add_editor_style( '//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500&display=swap' );
         add_editor_style( "/css/fontpairings/pairing1.css" );
     }
 }
@@ -72,7 +72,7 @@ function urban_enqueue_fonts_frontend() {
         );
         
         wp_enqueue_style( 'montserrat',
-            '//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,400;1,800',
+            '//fonts.googleapis.com/css?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500&display=swap',
             array(),
             CHILD_THEME_VERSION
         );
