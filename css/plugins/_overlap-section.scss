@@ -7,4 +7,16 @@
     h3 {
         @extend h2;
     }
+
+    .button {
+        background-color: transparent;
+        color: var(--primary);
+        border: none;
+
+        &:hover {
+            background-color: var(--primary);
+            border: none;
+            color: white;
+        }
+    }
 }
