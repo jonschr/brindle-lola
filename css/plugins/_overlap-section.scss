@@ -1,0 +1,10 @@
+.elodin-overlap-links {
+    .overlap-link {
+        box-shadow: 0 5px 10px 0 rgba(black, 0.07);
+        border-radius: 15px;
+    }
+
+    h3 {
+        @extend h2;
+    }
+}

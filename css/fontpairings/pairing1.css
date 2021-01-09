@@ -20,6 +20,17 @@ li {
     letter-spacing: -0.05em;
 }
 
+.overlap-link h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.overlap-link p {
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
 .button,
 .wp-block-button__link {
     font-family: 'Montserrat';
