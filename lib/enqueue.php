@@ -91,6 +91,12 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         array(),
         CHILD_THEME_VERSION
     );
+    
+    wp_register_script( 'expand',
+        get_stylesheet_directory_uri() . '/js/expand.js',
+        array(),
+        CHILD_THEME_VERSION
+    );
 
 }
 

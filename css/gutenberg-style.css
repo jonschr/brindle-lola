@@ -160,7 +160,8 @@ h2.entry-title {
   .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:hover,
   .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:hover {
     background-color: var(--primary);
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    color: white; }
   @media (max-width: 600px) {
     .button, .wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-file .wp-block-file__button,
     .gform_wrapper .gform_footer .gform_button.button,
@@ -570,6 +571,25 @@ figure.wp-block-image {
 @media (max-width: 600px) {
   .wp-block-spacer {
     max-height: 30px; } }
+
+/* ==========================================================================
+   The amenities expanding functionality
+   ========================================================================== */
+.wp-block-columns ul:not(.gform_fields) {
+  padding-left: 0 !important;
+  margin-left: 0; }
+  .wp-block-columns ul:not(.gform_fields) li {
+    list-style: none;
+    letter-spacing: 0.05em;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    line-height: 1.2em;
+    display: none; }
+  .wp-block-columns ul:not(.gform_fields).showall li {
+    display: block !important; }
+
+.wp-block-columns ul:not(.gform_fields) li:nth-of-type(1), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(2), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(3), .wp-block-columns ul:not(.gform_fields) li:nth-of-type(4) {
+  display: block; }
 
 .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.elodin-section > .section-content, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-container > .gb-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-genesis-blocks-gb-columns > .gb-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-getwid-section > .wp-block-getwid-section__wrapper > .wp-block-getwid-section__inner-wrapper, body.first-block-is-section .entry-content > :first-child.wp-block-uagb-section > .uagb-section__inner-wrap {
   margin-top: 90px; }
