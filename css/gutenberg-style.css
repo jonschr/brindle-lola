@@ -572,6 +572,11 @@ figure.wp-block-image {
   .wp-block-spacer {
     max-height: 30px; } }
 
+@media (min-width: 960px) {
+  .elodin-section.alignfull {
+    padding-top: 15%;
+    padding-bottom: 15%; } }
+
 /* ==========================================================================
    The amenities expanding functionality
    ========================================================================== */
