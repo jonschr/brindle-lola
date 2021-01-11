@@ -68,3 +68,12 @@ input[type="radio"] {
     color: #333;
     opacity: 1;
 }
+
+.gform_wrapper {
+    .gform_footer {
+        input[type="submit"].gform_button {
+            width: 100% !important;
+            display: block !important;
+        }
+    }
+}

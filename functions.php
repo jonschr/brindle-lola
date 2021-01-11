@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Urban' );
 define( 'CHILD_THEME_URL', 'https://www.brindledigital.com' );
-define( 'CHILD_THEME_VERSION', '1.0.9' );
+define( 'CHILD_THEME_VERSION', '1.2.0' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -98,9 +98,9 @@ require_once( 'lib/expand.php' );
 // Updater
 require 'vendor/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/jonschr/brindle-urban/',
+	'https://github.com/jonschr/brindle-lola/',
 	__FILE__,
-	'brindle-urban'
+	'brindle-lola'
 );
 
 // Optional: Set the branch that contains the stable release.

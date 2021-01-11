@@ -20,6 +20,11 @@ li {
     letter-spacing: -0.05em;
 }
 
+.footer-widget-area h3.widget-title {
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
 .overlap-link h3 {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -29,6 +34,19 @@ li {
 .overlap-link p {
     font-size: 16px;
     line-height: 1.3em;
+}
+
+.floorplans h3 {
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+
+.floorplans {
+    font-family: 'Work Sans';
+}
+
+.floorplans .label {
+    font-weight: bold;
 }
 
 .button,

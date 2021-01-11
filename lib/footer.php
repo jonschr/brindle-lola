@@ -1,8 +1,8 @@
 <?php
 
 
-// Adds support for 3-column footer widgets.
-add_theme_support( 'genesis-footer-widgets', 3 );
+// Adds support for 2-column footer widgets.
+add_theme_support( 'genesis-footer-widgets', 2 );
 
 // Adds support for after entry widget.
 // add_theme_support( 'genesis-after-entry-widget-area' );

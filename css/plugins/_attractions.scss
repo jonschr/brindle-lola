@@ -26,6 +26,12 @@ ul.attractions-filters {
         background-color: var(--primary);
         text-decoration: none;
 
+        @include notmobile {
+            border-radius: 3px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
         &:hover,
         &.active {
             background-color: var(--secondary);

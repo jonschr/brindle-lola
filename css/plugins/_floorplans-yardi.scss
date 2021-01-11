@@ -1,0 +1,53 @@
+.loop-container.loop-layout-floorplancarousel,
+.loop-container.loop-layout-floorplans,
+.loop-container.loop-layout-floorplans-detailed {
+    .entry {
+        box-shadow: 0 0 10px 0 rgba(black, 0.1);
+        border-radius: 10px;
+
+        .button {
+            background-color: var(--link);
+            border: none;
+            color: white;
+
+            &:hover,
+            &:active {
+                color: white;
+                background-color: var(--primary);
+            }
+        }
+
+        .label {
+            color: var(--primary);
+        }
+    }
+}
+
+.floorplanlinks {
+    a.button {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: white;
+
+        @include mobile {
+            border-radius: 0;
+        }
+
+        @include notmobile {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        &.inactive {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            color: white;
+        }
+
+        &:hover {
+            color: white;
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+    }
+}
