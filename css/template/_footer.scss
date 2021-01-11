@@ -136,6 +136,11 @@
     font-size: 14px;
     color: var(--default);
 
+    p {
+        font-size: 14px;
+        color: var(--default);
+    }
+
     .wrap {
         max-width: $defaultcontentwidth;
         margin-left: auto;
@@ -144,6 +149,10 @@
 
     a {
         color: var(--default);
+
+        &:hover {
+            color: var(--primary);
+        }
     }
 }
 
