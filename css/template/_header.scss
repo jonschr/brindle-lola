@@ -174,7 +174,7 @@
 
 @media(min-width: 1530px) {
     .menu-primary {
-        li:last-child {
+        >li:last-child {
             position: absolute;
             top: 0;
             right: 0;
