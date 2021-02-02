@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Urban' );
 define( 'CHILD_THEME_URL', 'https://www.brindledigital.com' );
-define( 'CHILD_THEME_VERSION', '1.2.2' );
+define( 'CHILD_THEME_VERSION', '1.2.3' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
