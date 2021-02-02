@@ -588,8 +588,7 @@ figure.wp-block-image {
     letter-spacing: 0.05em;
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    line-height: 1.2em;
-    display: none; }
+    line-height: 1.2em; }
   .wp-block-columns ul:not(.gform_fields).showall li {
     display: block !important; }
 
