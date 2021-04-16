@@ -2,6 +2,92 @@
    Wrappers
    ========================================================================== */
 
+body {
+    transition: .3s padding-top ease;
+}
+
+.preheader {
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    max-width: 100%;
+    background-color: var(--primary);
+    transition: .3s all ease;
+    transform: translateY(-100%);
+    z-index: 99;
+
+    // &:not(.active) {
+    // }
+
+    .wrap {
+        max-width: $defaultcontentwidth;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-flow: column;
+        }
+
+        @media(min-width: 960px) and (max-width: 1530px) {
+            max-width: 100%;
+            padding: 0 !important;
+        }
+
+        .widget {
+            margin: 0 auto;
+            min-width: 200px;
+
+            p {
+                font-size: 16px;
+                line-height: 1.2em;
+                color: white;
+            }
+
+            @include notmobile {
+                max-width: 50%;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    text-align: right;
+                    margin-right: 0;
+                }
+
+                &:first-child:last-child {
+                    text-align: left;
+                    margin-right: auto;
+                    margin-left: 0;
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+
+            @include mobile {
+                margin-bottom: 15px;
+                width: 100%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .widget-title {
+                margin-bottom: 5px;
+            }
+
+            :last-child {
+                margin-bottom: 0;
+            }
+
+
+        }
+    }
+}
+
 .site-header {
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -11,9 +97,9 @@
     position: fixed;
     z-index: 50;
 
-    @include notdesktop {
-        position: absolute;
-    }
+    // @include notdesktop {
+    //     position: absolute;
+    // }
 
     >.wrap {
         max-width: $defaultcontentwidth;
@@ -21,7 +107,7 @@
         // padding: 0 0 0 20px;
 
         @include mobile {
-            padding: 0 0 0 10px;
+            padding: 0 10px;
         }
 
         @include desktop {

@@ -8,15 +8,31 @@
  * Header customization
  */
 //* Register the widget area
-// genesis_register_sidebar( array(
-// 	'id'		=> 'preheader',
-// 	'name'		=> __( 'Preheader', 'elodin-twentynineteen' ),
-// 	'description'	=> __( 'Displays before anything else.', 'elodin-twentynineteen' ),
-// ) );
+genesis_register_sidebar( array(
+	'id'		=> 'preheader',
+	'name'		=> __( 'Preheader', 'lola' ),
+	'description'	=> __( 'Displays before anything else.', 'lola' ),
+) );
+
+add_action( 'genesis_before_header', 'lola_preheader' );
+function lola_preheader() {
+	
+	// bail if there's not a preheader
+	if ( !is_active_sidebar( 'preheader' ) )
+		return;
+		
+	wp_enqueue_script( 'preheader' );
+	
+	genesis_widget_area ('preheader', array(
+		'before' => '<div class="preheader"><div class="wrap">',
+		'after' => '</div></div>',
+	) );
+}
+
 
 //* Add the widget area before the opening wrap
-remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
-add_action( 'genesis_header', 'elodin_header_markup_open', 5 );
+// remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+// add_action( 'genesis_header', 'elodin_header_markup_open', 5 );
 
 /**
  * This is a modified version of the core genesis function, instead inserting the preheader area
