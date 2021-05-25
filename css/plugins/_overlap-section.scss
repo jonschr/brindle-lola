@@ -2,6 +2,10 @@
     .overlap-link {
         box-shadow: 0 5px 10px 0 rgba(black, 0.07);
         border-radius: 15px;
+
+        @include mobile {
+            width: 100% !important;
+        }
     }
 
     h3 {

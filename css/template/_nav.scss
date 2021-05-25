@@ -57,6 +57,10 @@
                 padding: 15px 8px;
                 font-size: 14px;
             }
+
+            @include mobile {
+                padding: 10px;
+            }
         }
 
         @include desktop {
