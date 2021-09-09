@@ -1,3 +1,6 @@
+## 1.5.1
+* Adding button colors for ApartmentSync
+
 ## 1.4
 * Fixing rounded corners (a change to the specificity in Gutenberg overrode our customization)
 * New theme image

@@ -1,0 +1,26 @@
+.floorplangrid {
+    ul.filters {
+        li {
+            a {
+                background-color: var(--primary);
+
+                &:hover,
+                &.active {
+                    background-color: var(--link);
+                }
+            }
+        }
+    }
+}
+
+.floorplangrid-wrap {
+    .floorplan-buttons {
+        a.button {
+            background-color: var(--primary);
+
+            &:hover {
+                background-color: var(--link);
+            }
+        }
+    }
+}
