@@ -2,11 +2,18 @@
     ul.filters {
         li {
             a {
+                @extend .button;
+
                 background-color: var(--primary);
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 0;
 
                 &:hover,
                 &.active {
                     background-color: var(--link);
+                    border: none;
                 }
             }
         }
@@ -16,6 +23,12 @@
 .floorplangrid-wrap {
     .floorplan-buttons {
         a.button {
+            @extend .button;
+
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0;
             background-color: var(--primary);
 
             &:hover {
